@@ -2,40 +2,38 @@
 using System.Linq;
 using UnityEngine;
 
-class SimpleBot
+class SimpleBot : Bot
 {
-    private BotController controller;
-    private Map map;
+    private List<Vector2> path;
 
-    public SimpleBot(BotController controller)
+    protected override void OnStart()
     {
-        this.controller = controller;
-        map = controller.Map;
-        var path = GetShortestPath(map.Bounds.LeftDown, map.Bounds.RightDown);
-        if(!controller.Left)
+        path = GetShortestPath(Map.Bounds.LeftDown, Map.Bounds.RightDown);
+        if (!Left)
             path.Reverse();
-        controller.OnReachDestination += unitId =>
-        {
-            var unitPos = controller.GetUnitPositon(unitId);
-            if (unitPos == path[path.Count - 1])
-                return;
-            var dest = path[path.IndexOf(unitPos) + 1];
-            controller.MoveUnit(unitId, dest);
-        };
-        while (controller.Gold >= GameConstants.UnitPrice)
-            controller.BuyUnitAndGetID();
+        while (Gold >= GameConstants.UnitPrice)
+            BuyUnitAndGetID();
     }
 
-    public List<Vector2> GetShortestPath(Vector2 start, Vector2 end)
+    protected override void OnUnitReachDestination(int unitID)
+    {
+        var unitPos = GetUnitPosition(unitID);
+        if (unitPos == path[path.Count - 1])
+            return;
+        var dest = path[path.IndexOf(unitPos) + 1];
+        MoveUnit(unitID, dest);
+    }
+
+    private List<Vector2> GetShortestPath(Vector2 start, Vector2 end)
     {
         var queue = new Queue<Vector2>();
         var visited = new HashSet<Vector2>();
         var previous = new Dictionary<Vector2, Vector2>();
         queue.Enqueue(start);
-        while(queue.Count > 0)
+        while (queue.Count > 0)
         {
             var node = queue.Dequeue();
-            if(node == end)
+            if (node == end)
             {
                 var path = new Stack<Vector2>();
                 var current = end;
@@ -48,7 +46,7 @@ class SimpleBot
                 return new List<Vector2>(path);
             }
             visited.Add(node);
-            foreach (var neighbour in GetNeighbours(node).Intersect(map.RoadNodes).Except(visited))
+            foreach (var neighbour in GetNeighbours(node).Intersect(Map.RoadNodes).Except(visited))
             {
                 previous[neighbour] = node;
                 queue.Enqueue(neighbour);
@@ -57,11 +55,12 @@ class SimpleBot
         return null;
     }
 
-    public IEnumerable<Vector2> GetNeighbours(Vector2 node)
+    private IEnumerable<Vector2> GetNeighbours(Vector2 node)
     {
-        yield return node + new Vector2(map.TileSize.x, 0f);
-        yield return node + new Vector2(-map.TileSize.x, 0f);
-        yield return node + new Vector2(0f, map.TileSize.y);
-        yield return node + new Vector2(0f, -map.TileSize.y);
+        yield return node + new Vector2(Map.TileSize.x, 0f);
+        yield return node + new Vector2(-Map.TileSize.x, 0f);
+        yield return node + new Vector2(0f, Map.TileSize.y);
+        yield return node + new Vector2(0f, -Map.TileSize.y);
     }
 }
+

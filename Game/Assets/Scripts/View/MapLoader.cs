@@ -6,6 +6,7 @@ using System.Linq;
 /// </summary>
 class MapLoader : MonoBehaviour
 {
+    public ViewCore ViewCore = null;
     /// <summary>
     /// Префаб тайла, из которых будет собираться карта
     /// </summary>

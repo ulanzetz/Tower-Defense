@@ -5,6 +5,7 @@
 /// </summary>
 class UnitLoader : MonoBehaviour
 {
+    public ViewCore ViewCore = null;
     public GameObject UnitPrefab = null;
 
     private void Start() =>
