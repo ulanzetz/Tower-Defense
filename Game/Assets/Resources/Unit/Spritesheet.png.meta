@@ -1,0 +1,1718 @@
+fileFormatVersion: 2
+guid: f22e2dbb26debd44d8c1de70c15e6c82
+timeCreated: 1527264338
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Spritesheet
+    21300002: Attack00000
+    21300004: Attack00001
+    21300006: Attack00002
+    21300008: Attack00003
+    21300010: Attack00004
+    21300012: Attack00005
+    21300014: Attack00006
+    21300016: Attack00007
+    21300018: Attack00008
+    21300020: Attack00009
+    21300022: Attack00010
+    21300024: Attack00011
+    21300026: Attack00012
+    21300028: Attack00013
+    21300030: Attack00014
+    21300032: Attack00015
+    21300034: Attack00016
+    21300036: Attack00017
+    21300038: Attack00018
+    21300040: Attack00019
+    21300042: Death00000
+    21300044: Death00001
+    21300046: Death00002
+    21300048: Death00003
+    21300050: Death00004
+    21300052: Death00005
+    21300054: Death00006
+    21300056: Death00007
+    21300058: Death00008
+    21300060: Death00009
+    21300062: Death00010
+    21300064: Death00011
+    21300066: Death00012
+    21300068: Death00013
+    21300070: Death00014
+    21300072: Death00015
+    21300074: Death00016
+    21300076: Death00017
+    21300078: Death00018
+    21300080: Death00019
+    21300082: Death00020
+    21300084: Death00021
+    21300086: Death00022
+    21300088: Death00023
+    21300090: Death00024
+    21300092: Death00025
+    21300094: Death00026
+    21300096: Death00027
+    21300098: Death00028
+    21300100: Death00029
+    21300102: Death00030
+    21300104: Death00031
+    21300106: Death00032
+    21300108: Death00033
+    21300110: Idle00000
+    21300112: Idle00001
+    21300114: Idle00002
+    21300116: Idle00003
+    21300118: Idle00004
+    21300120: Idle00005
+    21300122: Idle00006
+    21300124: Idle00007
+    21300126: Idle00008
+    21300128: Idle00009
+    21300130: Idle00010
+    21300132: Idle00011
+    21300134: Idle00012
+    21300136: Idle00013
+    21300138: Idle00014
+    21300140: Idle00015
+    21300142: Idle00016
+    21300144: Idle00017
+    21300146: Idle00018
+    21300148: Idle00019
+    21300150: Idle00020
+    21300152: Idle00021
+    21300154: Idle00022
+    21300156: Idle00023
+    21300158: Idle00024
+    21300160: Idle00025
+    21300162: Idle00026
+    21300164: Idle00027
+    21300166: Idle00028
+    21300168: Idle00029
+    21300170: Idle00030
+    21300172: Idle00031
+    21300174: Idle00032
+    21300176: Idle00033
+    21300178: Walk00000
+    21300180: Walk00001
+    21300182: Walk00002
+    21300184: Walk00003
+    21300186: Walk00004
+    21300188: Walk00005
+    21300190: Walk00006
+    21300192: Walk00007
+    21300194: Walk00008
+    21300196: Walk00009
+    21300198: Walk00010
+    21300200: Walk00011
+    21300202: Walk00012
+    21300204: Walk00013
+    21300206: Walk00014
+    21300208: Walk00015
+    21300210: Walk00016
+    21300212: Walk00017
+    21300214: Walk00018
+    21300216: Walk00019
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack00000
+      rect:
+        serializedVersion: 2
+        x: 2328
+        y: 3721
+        width: 430
+        height: 584
+      alignment: 9
+      pivot: {x: 0.68139535, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00001
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 2617
+        width: 399
+        height: 566
+      alignment: 9
+      pivot: {x: 0.69423556, y: 0.5123675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2675
+        width: 427
+        height: 534
+      alignment: 9
+      pivot: {x: 0.7915691, y: 0.54307115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00003
+      rect:
+        serializedVersion: 2
+        x: 3592
+        y: 7685
+        width: 502
+        height: 506
+      alignment: 9
+      pivot: {x: 0.82270914, y: 0.5731225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00004
+      rect:
+        serializedVersion: 2
+        x: 2645
+        y: 6244
+        width: 535
+        height: 511
+      alignment: 9
+      pivot: {x: 0.83364487, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00005
+      rect:
+        serializedVersion: 2
+        x: 3379
+        y: 6637
+        width: 538
+        height: 511
+      alignment: 9
+      pivot: {x: 0.8364312, y: 0.5753425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00006
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 6019
+        width: 525
+        height: 514
+      alignment: 9
+      pivot: {x: 0.85714287, y: 0.56809336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00007
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 6154
+        width: 532
+        height: 504
+      alignment: 9
+      pivot: {x: 0.84586465, y: 0.5793651}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00008
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 6290
+        width: 601
+        height: 499
+      alignment: 9
+      pivot: {x: 0.74875206, y: 0.5851703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00009
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 6791
+        width: 670
+        height: 448
+      alignment: 9
+      pivot: {x: 0.3283582, y: 0.65178573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00010
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 6792
+        width: 668
+        height: 445
+      alignment: 9
+      pivot: {x: 0.3263473, y: 0.6516854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00011
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 6535
+        width: 628
+        height: 446
+      alignment: 9
+      pivot: {x: 0.3375796, y: 0.6547085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00012
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 6660
+        width: 629
+        height: 449
+      alignment: 9
+      pivot: {x: 0.34658188, y: 0.65033406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 6096
+        width: 573
+        height: 455
+      alignment: 9
+      pivot: {x: 0.37870854, y: 0.64175826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00014
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 4134
+        width: 451
+        height: 464
+      alignment: 9
+      pivot: {x: 0.45232815, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00015
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 900
+        width: 351
+        height: 515
+      alignment: 9
+      pivot: {x: 0.6096866, y: 0.5631068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00016
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 1070
+        width: 369
+        height: 557
+      alignment: 9
+      pivot: {x: 0.62601626, y: 0.5278276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00017
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 2005
+        width: 407
+        height: 562
+      alignment: 9
+      pivot: {x: 0.6609337, y: 0.519573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00018
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 3352
+        width: 430
+        height: 583
+      alignment: 9
+      pivot: {x: 0.67906976, y: 0.4974271}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Attack00019
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 5501
+        width: 424
+        height: 566
+      alignment: 9
+      pivot: {x: 0.6745283, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00000
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 6069
+        width: 425
+        height: 566
+      alignment: 9
+      pivot: {x: 0.5552941, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3211
+        width: 433
+        height: 571
+      alignment: 9
+      pivot: {x: 0.556582, y: 0.51138353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00002
+      rect:
+        serializedVersion: 2
+        x: 2476
+        y: 4307
+        width: 446
+        height: 580
+      alignment: 9
+      pivot: {x: 0.5650224, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00003
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 4269
+        width: 451
+        height: 593
+      alignment: 9
+      pivot: {x: 0.5720621, y: 0.4940978}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00004
+      rect:
+        serializedVersion: 2
+        x: 2020
+        y: 4506
+        width: 454
+        height: 585
+      alignment: 9
+      pivot: {x: 0.56828195, y: 0.4957265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00005
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 4404
+        width: 454
+        height: 580
+      alignment: 9
+      pivot: {x: 0.5660793, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00006
+      rect:
+        serializedVersion: 2
+        x: 2746
+        y: 4889
+        width: 460
+        height: 583
+      alignment: 9
+      pivot: {x: 0.5608696, y: 0.4974271}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00007
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 4864
+        width: 464
+        height: 575
+      alignment: 9
+      pivot: {x: 0.5603448, y: 0.5043478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00008
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4938
+        width: 471
+        height: 568
+      alignment: 9
+      pivot: {x: 0.55626327, y: 0.5105634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00009
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 5737
+        width: 500
+        height: 551
+      alignment: 9
+      pivot: {x: 0.552, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00010
+      rect:
+        serializedVersion: 2
+        x: 3499
+        y: 7150
+        width: 585
+        height: 533
+      alignment: 9
+      pivot: {x: 0.51965815, y: 0.5628518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00011
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 6757
+        width: 658
+        height: 480
+      alignment: 9
+      pivot: {x: 0.51215804, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00012
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 7600
+        width: 696
+        height: 353
+      alignment: 9
+      pivot: {x: 0.5316092, y: 0.8356941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00013
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 7225
+        width: 672
+        height: 246
+      alignment: 9
+      pivot: {x: 0.51488096, y: 1.2154472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00014
+      rect:
+        serializedVersion: 2
+        x: 2092
+        y: 7351
+        width: 672
+        height: 247
+      alignment: 9
+      pivot: {x: 0.50446427, y: 1.2145749}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00015
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 7473
+        width: 689
+        height: 239
+      alignment: 9
+      pivot: {x: 0.509434, y: 1.2217573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00016
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 7479
+        width: 697
+        height: 236
+      alignment: 9
+      pivot: {x: 0.5035868, y: 1.2245762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00017
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 7714
+        width: 701
+        height: 239
+      alignment: 9
+      pivot: {x: 0.5007133, y: 1.2217573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00018
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 7717
+        width: 706
+        height: 236
+      alignment: 9
+      pivot: {x: 0.49716714, y: 1.2245762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00019
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 7477
+        width: 699
+        height: 238
+      alignment: 9
+      pivot: {x: 0.50214595, y: 1.222689}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00020
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 7717
+        width: 708
+        height: 236
+      alignment: 9
+      pivot: {x: 0.4957627, y: 1.2245762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00021
+      rect:
+        serializedVersion: 2
+        x: 2881
+        y: 7955
+        width: 709
+        height: 236
+      alignment: 9
+      pivot: {x: 0.49506348, y: 1.2245762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00022
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 7955
+        width: 713
+        height: 236
+      alignment: 9
+      pivot: {x: 0.49228612, y: 1.2245762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00023
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 7955
+        width: 716
+        height: 236
+      alignment: 9
+      pivot: {x: 0.49022347, y: 1.2245762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 7955
+        width: 723
+        height: 236
+      alignment: 9
+      pivot: {x: 0.48547718, y: 1.2245762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00025
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 7955
+        width: 720
+        height: 236
+      alignment: 9
+      pivot: {x: 0.4875, y: 1.2245762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00026
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 7241
+        width: 677
+        height: 236
+      alignment: 9
+      pivot: {x: 0.5184638, y: 1.2245762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00027
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 7239
+        width: 677
+        height: 236
+      alignment: 9
+      pivot: {x: 0.5184638, y: 1.2245762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00028
+      rect:
+        serializedVersion: 2
+        x: 2820
+        y: 7717
+        width: 677
+        height: 236
+      alignment: 9
+      pivot: {x: 0.5184638, y: 1.2245762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00029
+      rect:
+        serializedVersion: 2
+        x: 2820
+        y: 7479
+        width: 677
+        height: 236
+      alignment: 9
+      pivot: {x: 0.5184638, y: 1.2245762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00030
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 7239
+        width: 662
+        height: 238
+      alignment: 9
+      pivot: {x: 0.5090634, y: 1.222689}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00031
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 7111
+        width: 662
+        height: 238
+      alignment: 9
+      pivot: {x: 0.5090634, y: 1.222689}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00032
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 6983
+        width: 660
+        height: 240
+      alignment: 9
+      pivot: {x: 0.51060605, y: 1.2166667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death00033
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 6553
+        width: 667
+        height: 237
+      alignment: 9
+      pivot: {x: 0.5157421, y: 1.227848}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00000
+      rect:
+        serializedVersion: 2
+        x: 3357
+        y: 3753
+        width: 424
+        height: 566
+      alignment: 9
+      pivot: {x: 0.5566038, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00001
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 3546
+        width: 433
+        height: 586
+      alignment: 9
+      pivot: {x: 0.5496536, y: 0.49829352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00002
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 3137
+        width: 430
+        height: 568
+      alignment: 9
+      pivot: {x: 0.5604651, y: 0.5140845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00003
+      rect:
+        serializedVersion: 2
+        x: 2924
+        y: 3772
+        width: 431
+        height: 568
+      alignment: 9
+      pivot: {x: 0.55452436, y: 0.5140845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00004
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 3707
+        width: 438
+        height: 560
+      alignment: 9
+      pivot: {x: 0.56164384, y: 0.5214286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00005
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 3840
+        width: 440
+        height: 562
+      alignment: 9
+      pivot: {x: 0.5659091, y: 0.519573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00006
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3784
+        width: 448
+        height: 584
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00007
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 4600
+        width: 461
+        height: 566
+      alignment: 9
+      pivot: {x: 0.57049894, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00008
+      rect:
+        serializedVersion: 2
+        x: 2276
+        y: 5093
+        width: 468
+        height: 576
+      alignment: 9
+      pivot: {x: 0.57905984, y: 0.5069444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00009
+      rect:
+        serializedVersion: 2
+        x: 3182
+        y: 6047
+        width: 485
+        height: 588
+      alignment: 9
+      pivot: {x: 0.5731959, y: 0.49659863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00010
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 5508
+        width: 486
+        height: 586
+      alignment: 9
+      pivot: {x: 0.5740741, y: 0.49829352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00011
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 5441
+        width: 473
+        height: 576
+      alignment: 9
+      pivot: {x: 0.5856237, y: 0.5069444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00012
+      rect:
+        serializedVersion: 2
+        x: 3003
+        y: 5474
+        width: 483
+        height: 571
+      alignment: 9
+      pivot: {x: 0.57349896, y: 0.51138353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00013
+      rect:
+        serializedVersion: 2
+        x: 2516
+        y: 5671
+        width: 485
+        height: 571
+      alignment: 9
+      pivot: {x: 0.57731956, y: 0.51138353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00014
+      rect:
+        serializedVersion: 2
+        x: 3488
+        y: 4910
+        width: 476
+        height: 589
+      alignment: 9
+      pivot: {x: 0.5840336, y: 0.49575552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00015
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 5168
+        width: 473
+        height: 567
+      alignment: 9
+      pivot: {x: 0.5813953, y: 0.51499116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00016
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 5564
+        width: 474
+        height: 588
+      alignment: 9
+      pivot: {x: 0.5780591, y: 0.49829933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00017
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 4986
+        width: 465
+        height: 576
+      alignment: 9
+      pivot: {x: 0.572043, y: 0.5086806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00018
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4370
+        width: 461
+        height: 566
+      alignment: 9
+      pivot: {x: 0.5661605, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00019
+      rect:
+        serializedVersion: 2
+        x: 3208
+        y: 4342
+        width: 448
+        height: 566
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00020
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 3937
+        width: 440
+        height: 567
+      alignment: 9
+      pivot: {x: 0.55, y: 0.51499116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00021
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 3269
+        width: 430
+        height: 569
+      alignment: 9
+      pivot: {x: 0.5534884, y: 0.51318103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00022
+      rect:
+        serializedVersion: 2
+        x: 3612
+        y: 3163
+        width: 423
+        height: 588
+      alignment: 9
+      pivot: {x: 0.5555556, y: 0.49659863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00023
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 3204
+        width: 424
+        height: 566
+      alignment: 9
+      pivot: {x: 0.5566038, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00024
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 3153
+        width: 424
+        height: 566
+      alignment: 9
+      pivot: {x: 0.5566038, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00025
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 2784
+        width: 424
+        height: 566
+      alignment: 9
+      pivot: {x: 0.5566038, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00026
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 2701
+        width: 424
+        height: 566
+      alignment: 9
+      pivot: {x: 0.5566038, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00027
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 2569
+        width: 424
+        height: 566
+      alignment: 9
+      pivot: {x: 0.5566038, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00028
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 2412
+        width: 424
+        height: 566
+      alignment: 9
+      pivot: {x: 0.5566038, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00029
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2107
+        width: 424
+        height: 566
+      alignment: 9
+      pivot: {x: 0.5566038, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00030
+      rect:
+        serializedVersion: 2
+        x: 3186
+        y: 3185
+        width: 424
+        height: 566
+      alignment: 9
+      pivot: {x: 0.5566038, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00031
+      rect:
+        serializedVersion: 2
+        x: 3186
+        y: 3185
+        width: 424
+        height: 566
+      alignment: 9
+      pivot: {x: 0.5566038, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00032
+      rect:
+        serializedVersion: 2
+        x: 3186
+        y: 3185
+        width: 424
+        height: 566
+      alignment: 9
+      pivot: {x: 0.5566038, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle00033
+      rect:
+        serializedVersion: 2
+        x: 3186
+        y: 3185
+        width: 424
+        height: 566
+      alignment: 9
+      pivot: {x: 0.5566038, y: 0.5159011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00000
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 2980
+        width: 428
+        height: 564
+      alignment: 9
+      pivot: {x: 0.55140185, y: 0.5141844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00001
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 2644
+        width: 423
+        height: 558
+      alignment: 9
+      pivot: {x: 0.56264776, y: 0.5197133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00002
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 2214
+        width: 414
+        height: 568
+      alignment: 9
+      pivot: {x: 0.5869565, y: 0.5105634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00003
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 2121
+        width: 407
+        height: 578
+      alignment: 9
+      pivot: {x: 0.6093366, y: 0.5017301}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00004
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 2028
+        width: 374
+        height: 587
+      alignment: 9
+      pivot: {x: 0.6684492, y: 0.49403748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00005
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1241
+        width: 380
+        height: 584
+      alignment: 9
+      pivot: {x: 0.67368424, y: 0.49657536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00006
+      rect:
+        serializedVersion: 2
+        x: 2633
+        y: 2053
+        width: 397
+        height: 589
+      alignment: 9
+      pivot: {x: 0.6297229, y: 0.49235994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00007
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 936
+        width: 375
+        height: 577
+      alignment: 9
+      pivot: {x: 0.664, y: 0.50259966}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00008
+      rect:
+        serializedVersion: 2
+        x: 3516
+        y: 2586
+        width: 375
+        height: 575
+      alignment: 9
+      pivot: {x: 0.656, y: 0.5043478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00009
+      rect:
+        serializedVersion: 2
+        x: 2553
+        y: 1483
+        width: 372
+        height: 568
+      alignment: 9
+      pivot: {x: 0.63709676, y: 0.5105634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00010
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 961
+        width: 365
+        height: 581
+      alignment: 9
+      pivot: {x: 0.6438356, y: 0.49913943}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00011
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 1629
+        width: 385
+        height: 583
+      alignment: 9
+      pivot: {x: 0.6181818, y: 0.4974271}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00012
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2013
+        width: 391
+        height: 567
+      alignment: 9
+      pivot: {x: 0.60358053, y: 0.5114638}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00013
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 1544
+        width: 385
+        height: 575
+      alignment: 9
+      pivot: {x: 0.5974026, y: 0.5043478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00014
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 1827
+        width: 400
+        height: 583
+      alignment: 9
+      pivot: {x: 0.5725, y: 0.4974271}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00015
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 1417
+        width: 380
+        height: 586
+      alignment: 9
+      pivot: {x: 0.6105263, y: 0.49488056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00016
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 1424
+        width: 370
+        height: 587
+      alignment: 9
+      pivot: {x: 0.62972975, y: 0.49403748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00017
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1515
+        width: 399
+        height: 590
+      alignment: 9
+      pivot: {x: 0.5864662, y: 0.4915254}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00018
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 2582
+        width: 416
+        height: 569
+      alignment: 9
+      pivot: {x: 0.56490386, y: 0.5096661}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk00019
+      rect:
+        serializedVersion: 2
+        x: 3658
+        y: 4321
+        width: 433
+        height: 587
+      alignment: 9
+      pivot: {x: 0.55427253, y: 0.49403748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
