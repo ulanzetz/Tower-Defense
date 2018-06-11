@@ -5,9 +5,9 @@
 /// </summary>
 class BotsInitializer : MonoBehaviour
 {
-    public ViewCore ViewCore;
-    public Bot LeftBot;
-    public Bot RightBot;
+    public ViewCore ViewCore = null;
+    public Bot LeftBot = null;
+    public Bot RightBot = null;
 
     private void Start()
     {

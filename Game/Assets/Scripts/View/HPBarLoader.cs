@@ -5,7 +5,7 @@
 /// </summary>
 class HPBarLoader : MonoBehaviour
 {
-    public ViewCore ViewCore;
+    public ViewCore ViewCore = null;
     public GameObject TowerBar = null;
     public GameObject UnitBar = null;
 
