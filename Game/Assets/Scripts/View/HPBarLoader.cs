@@ -11,7 +11,7 @@ class HPBarLoader : MonoBehaviour
 
     private void Start()
     {
-        ViewCore.Game.Towers.ForEach(t => AddHPBar(t, TowerBar));
+        ViewCore.Game.OnTowerAdd += (t => AddHPBar(t, TowerBar));
         ViewCore.Game.OnUnitAdd += (u => AddHPBar(u, UnitBar));
     }
 

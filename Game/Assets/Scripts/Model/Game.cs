@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 /// <summary>
 /// Основной класс игры
@@ -42,4 +43,8 @@ public class Game
     public void AddTower(Tower tower) => OnTowerAdd?.Invoke(tower);
 
     public void EndGame(Player winner) => OnPlayerWin?.Invoke(winner);
+
+    public Dictionary<Vector2, Queue<Unit>> UnitPositionQueues = new Dictionary<Vector2, Queue<Unit>>();
+
+    public HashSet<Vector2> UnitBlockedPositions = new HashSet<Vector2>();
 }

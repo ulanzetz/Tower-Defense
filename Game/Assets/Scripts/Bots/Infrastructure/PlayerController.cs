@@ -2,9 +2,9 @@
 using UnityEngine;
 
 /// <summary>
-/// Контроллер, связывающий бота с игрой
+/// Контроллер игрока
 /// </summary>
-class BotController
+class PlayerController
 {
     private Player player;
     private Dictionary<int, Unit> units = new Dictionary<int, Unit>();
@@ -13,7 +13,7 @@ class BotController
     public delegate void UnitIDHandler(int unitID);
     public event UnitIDHandler OnReachDestination;
 
-    public BotController(Player player)
+    public PlayerController(Player player)
     {
         this.player = player;
     }

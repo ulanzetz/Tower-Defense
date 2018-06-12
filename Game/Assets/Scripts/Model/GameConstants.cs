@@ -41,11 +41,11 @@ public static class GameConstants
     /// <summary>
     /// Дальность атаки юнита
     /// </summary>
-    public const float UnitRange = 20f;
+    public const float UnitRange = 21f;
     /// <summary>
     /// Дальность атаки башни
     /// </summary>
-    public const float TowerRange = 200f;
+    public const float TowerRange = 170f;
     /// <summary>
     /// Скорость движения юнита
     /// </summary>
@@ -53,7 +53,7 @@ public static class GameConstants
     /// <summary>
     /// Радиус зоны, в которой может быть только 1 юнит
     /// </summary>
-    public const float UnitAreaRange = 15f;
+    public const float UnitAreaRange = 20f;
     /// <summary>
     /// Границы прогружаемой карты
     /// </summary>

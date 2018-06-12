@@ -14,16 +14,25 @@ class UnitViewer : MonoBehaviour
 
             unit.OnAttack += (enemy) =>
             {
+                if (animState == AnimState.Death)
+                    return;
                 animState = AnimState.Attack;
                 Direction = (enemy.Position.x - unit.Position.x);
             };
             unit.OnMove += () =>
             {
+                if (animState == AnimState.Death)
+                    return;
                 animState = AnimState.Walk;
                 Direction = (unit.Position.x - transform.position.x);
             };
             unit.OnDeath += () => animState = AnimState.Death;
-            unit.OnIdle += () => animState = AnimState.Idle;
+            unit.OnIdle += () =>
+            {
+                if (animState == AnimState.Death)
+                    return;
+                animState = AnimState.Idle;
+            };
         }
     }
 

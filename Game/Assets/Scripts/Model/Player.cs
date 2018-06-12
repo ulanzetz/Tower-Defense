@@ -39,6 +39,7 @@ public class Player
         Gold -= GameConstants.TowerPrice;
         var tower = new Tower(pos, this);
         Towers.Add(tower);
+        Game.AddTower(tower);
         return tower;
     }
 

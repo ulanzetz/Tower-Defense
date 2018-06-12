@@ -2,7 +2,7 @@
 
 abstract class Bot : MonoBehaviour
 {
-    public BotController Controller
+    public PlayerController Controller
     {
         set
         {
@@ -12,7 +12,7 @@ abstract class Bot : MonoBehaviour
         }
     }
 
-    private BotController controller;
+    private PlayerController controller;
 
     protected abstract void OnStart();
     protected abstract void OnUnitReachDestination(int unitID);

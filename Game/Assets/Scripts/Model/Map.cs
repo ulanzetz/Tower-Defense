@@ -22,6 +22,8 @@ public class Map
             Select(y => new Vector2(x, y))
         );
 
+    public IEnumerable<Vector2> All => Left.Concat(Right);
+
     private Map(Bounds2D bounds, Vector2 tileSize, HashSet<Vector2> roadNodes)
     {
         Bounds = bounds;

@@ -11,7 +11,7 @@ class BotsInitializer : MonoBehaviour
 
     private void Start()
     {
-        LeftBot.Controller = new BotController(ViewCore.Game.LeftPlayer);
-        RightBot.Controller = new BotController(ViewCore.Game.RightPlayer);
+        LeftBot.Controller = new PlayerController(ViewCore.Game.LeftPlayer);
+        RightBot.Controller = new PlayerController(ViewCore.Game.RightPlayer);
     }
 }

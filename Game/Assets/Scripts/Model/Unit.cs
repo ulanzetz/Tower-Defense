@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -9,8 +10,11 @@ public class Unit : ActiveObject
 
     private float speed;
     private Vector2 moveDelta;
+    private Vector2 blockingPos;
+    private Vector2 areaRangeDelta;
     private Vector2 destination;
     private bool moving;
+    private bool idle = true;
 
     public Unit(Vector2 pos, Player owner, float speed) : 
         base(
@@ -23,6 +27,13 @@ public class Unit : ActiveObject
         )
     {
         this.speed = speed;
+        OnDeath += () =>
+        {
+            if (Game.UnitBlockedPositions.Contains(blockingPos - areaRangeDelta))
+                Game.UnitBlockedPositions.Remove(blockingPos - areaRangeDelta);
+            if (Game.UnitPositionQueues.ContainsKey(blockingPos) && Game.UnitPositionQueues[blockingPos].Contains(this))
+                Game.UnitPositionQueues[blockingPos] = new Queue<Unit>(Game.UnitPositionQueues[blockingPos].Except(new[] { this }));
+        };
     }
 
     public void Move(Vector2 destination)
@@ -36,6 +47,8 @@ public class Unit : ActiveObject
         if (!Game.Map.RoadNodes.Contains(destination))
             throw new InvalidOperationException("You can't move unit to not-road node");
         moveDelta = delta * speed;
+        areaRangeDelta = delta * GameConstants.UnitAreaRange;
+        blockingPos = position + areaRangeDelta;
         moving = true;
     }
 
@@ -44,19 +57,31 @@ public class Unit : ActiveObject
         base.OnTurn();
         if (moving && !fighting)
         {
-            var newPos = Position + moveDelta;
-            if (Game.Units.
-                Where(u => u != this).
-                Select(u => u.Position).
-                Where(p => p != Game.Map.Bounds.LeftDown && p != Game.Map.Bounds.RightDown).
-                Where(p => (p - newPos).magnitude <= GameConstants.UnitAreaRange).
-                Any())
+            Queue<Unit> queue;
+            if (!Game.UnitPositionQueues.ContainsKey(blockingPos))
+            {
+                queue = new Queue<Unit>();
+                Game.UnitPositionQueues[blockingPos] = queue;
+            }
+            else
+                queue = Game.UnitPositionQueues[blockingPos];
+            if (!queue.Contains(this))
+                queue.Enqueue(this);
+            if(Game.UnitBlockedPositions.Contains(blockingPos) || queue.Peek() != this)
             {
                 OnIdle?.Invoke();
+                idle = true;
+                Game.UnitBlockedPositions.Add(blockingPos - areaRangeDelta);
                 return;
-            }      
-
-            Position = newPos;
+            }
+            if (idle)
+                Game.UnitBlockedPositions.Remove(blockingPos - areaRangeDelta);
+            Position += moveDelta;
+            if (Position == blockingPos)
+            {
+                queue.Dequeue();
+                blockingPos += areaRangeDelta;
+            }
             if (Position == destination)
             {
                 moving = false;
