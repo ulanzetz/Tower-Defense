@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
+//using UnityEngine.UI;
 
 /// <summary>
 /// Основной скрипт, вопроизводящий шаги игры
@@ -13,16 +13,6 @@ class ViewCore : MonoBehaviour
     public Game Game => GameBehaviour.Game;
 
     private short framesCount = 0;
-
-    private void Start()
-    {
-        Game.OnPlayerWin += player =>
-        {
-            var gameOver = transform.Find("GameOver").gameObject;
-            gameOver.SetActive(true);
-            gameOver.GetComponentInChildren<Text>().text = $"Game Over.\nWinner: {player.Name}";
-        };
-    }
 
     private void Update()
     {
