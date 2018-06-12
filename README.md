@@ -8,6 +8,7 @@
 Скриншоты:
 <img src="https://github.com/ulanzetz/Tower-Defense/raw/master/Readme-Images/Game1.png?raw=true">
 <img src="https://github.com/ulanzetz/Tower-Defense/raw/master/Readme-Images/Game2.png?raw=true">
+<img src="https://github.com/ulanzetz/Tower-Defense/raw/master/Readme-Images/Game3.png?raw=true">
 
 Структура проекта:
 ```
