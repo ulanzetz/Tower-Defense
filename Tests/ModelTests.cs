@@ -85,13 +85,6 @@ public class ModelTests
     }
 
     [Test]
-    public void PlayerCanNotBuildTowersWithouMoney()
-    {
-        leftPlayer.GetType().GetProperty("Gold").SetValue(leftPlayer, 0);
-        Assert.Throws<InvalidOperationException>(() => leftPlayer.BuildTower(new Vector2(0, 0)));
-    }
-
-    [Test]
     public void PlayersBothBuyAndOwnUnits()
     {
         leftPlayer.BuyUnit();
@@ -128,7 +121,7 @@ public class ModelTests
     {
         leftPlayer.BuyUnit();
         var leftUnit = game.Units.First();
-        Assert.Throws<InvalidOperationException>(() => leftUnit.Move(leftUnit.Position));
+        Assert.Throws<ArgumentException>(() => leftUnit.Move(leftUnit.Position));
     }
 
     [Test]
@@ -170,7 +163,7 @@ public class ModelTests
         rightPlayer.BuyUnit();
         var leftUnit = leftPlayer.Units.First();
         var rightUnit = rightPlayer.Units.First();
-        leftUnit.GetType().GetProperty("Position").SetValue(leftUnit, rightUnit.Position + Vector2.left);
+        leftUnit.Position = rightUnit.Position + Vector2.left;
         game.MakeTurn();
         Assert.AreEqual(GameConstants.UnitHealth - GameConstants.UnitDamage, leftUnit.HP);
         Assert.AreEqual(GameConstants.UnitHealth - GameConstants.UnitDamage, rightUnit.HP);
@@ -185,8 +178,8 @@ public class ModelTests
         var rightUnit = rightPlayer.Units.First();
         leftPlayer.BuyUnit();
         var leftUnit2 = leftPlayer.Units.Where(x => !x.Equals(leftUnit1)).First();
-        leftUnit1.GetType().GetProperty("Position").SetValue(leftUnit1, rightUnit.Position + Vector2.left);
-        leftUnit2.GetType().GetProperty("Position").SetValue(leftUnit2, rightUnit.Position + 2 * Vector2.left);
+        leftUnit1.Position = rightUnit.Position + Vector2.left;
+        leftUnit2.Position = rightUnit.Position + 2 * Vector2.left;
         game.MakeTurn();
         Assert.AreEqual(GameConstants.UnitHealth, leftUnit2.HP);
         Assert.AreEqual(GameConstants.UnitHealth - GameConstants.UnitDamage, leftUnit1.HP);
@@ -198,14 +191,7 @@ public class ModelTests
     {
         leftPlayer.BuyUnit();
         var unit = leftPlayer.Units.First();
-        Assert.Throws<InvalidOperationException>(
+        Assert.Throws<ArgumentException>(
             () => unit.Move(unit.Position + (Vector2.up + Vector2.right)));
-    }
-
-    [Test]
-    public void PlayerCanNotBuyUnitWithoutGold()
-    {
-        leftPlayer.GetType().GetProperty("Gold").SetValue(leftPlayer, 0);
-        Assert.Throws<InvalidOperationException>(() => leftPlayer.BuyUnit());
     }
 }

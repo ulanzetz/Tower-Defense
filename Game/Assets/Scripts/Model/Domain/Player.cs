@@ -26,9 +26,8 @@ public class Player
     public IEnumerable<ActiveObject> Ownership => Towers.Cast<ActiveObject>().Concat(Units);
     public IEnumerable<ActiveObject> Enemies => Game.GetEnemies(this);
     public float Direction => left ? 1 : -1;
-
-    private Bounds2D Area => left ? GameConstants.GameBounds.Left : GameConstants.GameBounds.Right;
-    private Vector2 UnitRespawn => left ? Area.Min : new Vector2(Area.Max.x, Area.Min.y);
+    public Bounds2D Area => left ? GameConstants.GameBounds.Left : GameConstants.GameBounds.Right;
+    public Vector2 UnitRespawn => left ? Area.Min : new Vector2(Area.Max.x, Area.Min.y);
     
     public Tower BuildTower(Vector2 pos)
     {
@@ -36,6 +35,8 @@ public class Player
             throw new InvalidOperationException("You havn't enoght money");
         if (!Area.Contains(pos))
             throw new InvalidOperationException("You can't build tower in that position");
+        if (Game.Map.RoadNodes.Contains(pos))
+            throw new InvalidOperationException("You can't build tower on road node");
         Gold -= GameConstants.TowerPrice;
         var tower = new Tower(pos, this);
         Towers.Add(tower);
