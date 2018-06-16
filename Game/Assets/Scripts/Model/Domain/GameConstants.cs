@@ -45,7 +45,7 @@ public static class GameConstants
     /// <summary>
     /// Дальность атаки башни
     /// </summary>
-    public const float TowerRange = 170f;
+    public const float TowerRange = 200f;
     /// <summary>
     /// Скорость движения юнита
     /// </summary>

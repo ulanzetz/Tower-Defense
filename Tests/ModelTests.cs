@@ -7,8 +7,8 @@ using UnityEngine;
 public class ModelTests
 {
     private static Game game;
-    private static Player leftPlayer => game.LeftPlayer;
-    private static Player rightPlayer => game.RightPlayer;
+    private static Player LeftPlayer => game.LeftPlayer;
+    private static Player RightPlayer => game.RightPlayer;
 
     private Vector2 GetRandomVectorOutTheRoad(Bounds2D bounds)
     {
@@ -72,39 +72,39 @@ public class ModelTests
     [Test]
     public void PlayerCanBuyTowers()
     {
-        var randomPlace = GetRandomVectorOutTheRoad(leftPlayer.Area);
-        var prevPlayerMoney = leftPlayer.Gold;
+        var randomPlace = GetRandomVectorOutTheRoad(LeftPlayer.Area);
+        var prevPlayerMoney = LeftPlayer.Gold;
         game.LeftPlayer.BuildTower(randomPlace);
-        Assert.AreEqual(prevPlayerMoney - GameConstants.TowerPrice, leftPlayer.Gold);
+        Assert.AreEqual(prevPlayerMoney - GameConstants.TowerPrice, LeftPlayer.Gold);
     }
 
     [Test]
     public void PlayerCanNotBuildTowersOnRoads()
     {
-        Assert.Throws<InvalidOperationException>(() => leftPlayer.BuildTower(game.Map.RoadNodes.First()));
+        Assert.Throws<InvalidOperationException>(() => LeftPlayer.BuildTower(game.Map.RoadNodes.First()));
     }
 
     [Test]
     public void PlayersBothBuyAndOwnUnits()
     {
-        leftPlayer.BuyUnit();
+        LeftPlayer.BuyUnit();
         var leftUnit = game.Units.First();
-        rightPlayer.BuyUnit();
+        RightPlayer.BuyUnit();
         var rightUnit = game.Units.Where(x => !x.Equals(leftUnit)).First();
-        leftPlayer.BuyUnit();
+        LeftPlayer.BuyUnit();
         var leftUnit2 = game.Units.Where(x => !x.Equals(leftUnit) && !x.Equals(rightUnit)).First();
         Assert.AreEqual(3, game.Units.Count());
         Assert.AreSame(leftUnit.Owner, leftUnit2.Owner);
         Assert.AreNotSame(leftUnit.Owner, rightUnit.Owner);
         Assert.AreNotSame(leftUnit2.Owner, rightUnit.Owner);
-        Assert.AreEqual(2, leftPlayer.Units.Count());
-        Assert.AreEqual(1, rightPlayer.Units.Count());
+        Assert.AreEqual(2, LeftPlayer.Units.Count());
+        Assert.AreEqual(1, RightPlayer.Units.Count());
     }
 
     [Test]
     public void UnitCanMoveOnRoad()
     {
-        leftPlayer.BuyUnit();
+        LeftPlayer.BuyUnit();
         var leftUnit = game.Units.First();
         var unitSpawnPlace = game.Map.RoadNodes.First();
         var destination = game.Map.RoadNodes
@@ -119,7 +119,7 @@ public class ModelTests
     [Test]
     public void UnitCanNotMoveWhereHeStands()
     {
-        leftPlayer.BuyUnit();
+        LeftPlayer.BuyUnit();
         var leftUnit = game.Units.First();
         Assert.Throws<ArgumentException>(() => leftUnit.Move(leftUnit.Position));
     }
@@ -127,30 +127,30 @@ public class ModelTests
     [Test]
     public void PlayerCanNotPlaceTowerOnOpponentArea()
     {
-        var randOpponentVector = GetRandomVectorOutTheRoad(rightPlayer.Area);
-        Assert.Throws<InvalidOperationException>(() => leftPlayer.BuildTower(randOpponentVector));
+        var randOpponentVector = GetRandomVectorOutTheRoad(RightPlayer.Area);
+        Assert.Throws<InvalidOperationException>(() => LeftPlayer.BuildTower(randOpponentVector));
     }
 
     [Test]
     public void UnitDecreaseHPManually()
     {
-        leftPlayer.BuyUnit();
+        LeftPlayer.BuyUnit();
         var unit = game.Units.First();
     }
 
     [Test]
     public void PlayersBothBuyAndOwnTowers()
     {
-        var rndPlaceLeft1 = GetRandomVectorOutTheRoad(leftPlayer.Area);
-        var rndPlaceLeft2 = GetRandomVectorOutTheRoad(leftPlayer.Area);
-        var rndPlaceRight = GetRandomVectorOutTheRoad(rightPlayer.Area);
+        var rndPlaceLeft1 = GetRandomVectorOutTheRoad(LeftPlayer.Area);
+        var rndPlaceLeft2 = GetRandomVectorOutTheRoad(LeftPlayer.Area);
+        var rndPlaceRight = GetRandomVectorOutTheRoad(RightPlayer.Area);
 
-        Assert.DoesNotThrow(() => leftPlayer.BuildTower(rndPlaceLeft1));
-        var leftTower1 = leftPlayer.Towers.First();
-        Assert.DoesNotThrow(() => rightPlayer.BuildTower(rndPlaceRight));
-        var rightTower = rightPlayer.Towers.First();
-        Assert.DoesNotThrow(() => leftPlayer.BuildTower(rndPlaceLeft2));
-        var leftTower2 = leftPlayer.Towers.Where(x => !x.Equals(leftTower1)).First();
+        Assert.DoesNotThrow(() => LeftPlayer.BuildTower(rndPlaceLeft1));
+        var leftTower1 = LeftPlayer.Towers.First();
+        Assert.DoesNotThrow(() => RightPlayer.BuildTower(rndPlaceRight));
+        var rightTower = RightPlayer.Towers.First();
+        Assert.DoesNotThrow(() => LeftPlayer.BuildTower(rndPlaceLeft2));
+        var leftTower2 = LeftPlayer.Towers.Where(x => !x.Equals(leftTower1)).First();
 
         Assert.AreSame(leftTower1.Owner, leftTower2.Owner);
         Assert.AreNotSame(leftTower1.Owner, rightTower.Owner);
@@ -159,10 +159,10 @@ public class ModelTests
     [Test]
     public void UnitsHPDecreasedByAttacks()
     {
-        leftPlayer.BuyUnit();
-        rightPlayer.BuyUnit();
-        var leftUnit = leftPlayer.Units.First();
-        var rightUnit = rightPlayer.Units.First();
+        LeftPlayer.BuyUnit();
+        RightPlayer.BuyUnit();
+        var leftUnit = LeftPlayer.Units.First();
+        var rightUnit = RightPlayer.Units.First();
         leftUnit.Position = rightUnit.Position + Vector2.left;
         game.MakeTurn();
         Assert.AreEqual(GameConstants.UnitHealth - GameConstants.UnitDamage, leftUnit.HP);
@@ -172,12 +172,12 @@ public class ModelTests
     [Test]
     public void UnitsAttackNearestUnit()
     {
-        leftPlayer.BuyUnit();
-        rightPlayer.BuyUnit();
-        var leftUnit1 = leftPlayer.Units.First();
-        var rightUnit = rightPlayer.Units.First();
-        leftPlayer.BuyUnit();
-        var leftUnit2 = leftPlayer.Units.Where(x => !x.Equals(leftUnit1)).First();
+        LeftPlayer.BuyUnit();
+        RightPlayer.BuyUnit();
+        var leftUnit1 = LeftPlayer.Units.First();
+        var rightUnit = RightPlayer.Units.First();
+        LeftPlayer.BuyUnit();
+        var leftUnit2 = LeftPlayer.Units.Where(x => !x.Equals(leftUnit1)).First();
         leftUnit1.Position = rightUnit.Position + Vector2.left;
         leftUnit2.Position = rightUnit.Position + 2 * Vector2.left;
         game.MakeTurn();
@@ -189,8 +189,8 @@ public class ModelTests
     [Test]
     public void UnitsCanNotMoveDiagonally()
     {
-        leftPlayer.BuyUnit();
-        var unit = leftPlayer.Units.First();
+        LeftPlayer.BuyUnit();
+        var unit = LeftPlayer.Units.First();
         Assert.Throws<ArgumentException>(
             () => unit.Move(unit.Position + (Vector2.up + Vector2.right)));
     }
