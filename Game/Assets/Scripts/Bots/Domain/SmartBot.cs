@@ -58,7 +58,7 @@ class SmartBot : Bot
         var side = Left ? Map.Left : Map.Right;
         var emptyPositsion = side.Except(Map.RoadNodes);
         return emptyPositsion.
-            OrderBy(e => Map.RoadNodes.Where(r => (e - r).magnitude <= GameConstants.TowerRange).Count()).
+            OrderByDescending(e => Map.RoadNodes.Where(r => (e - r).magnitude <= GameConstants.TowerRange).Count()).
             Take(count);
     }
 }
