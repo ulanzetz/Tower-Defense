@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using UnityEngine;
+using Vector2 = UnityEngine.Vector2;
 
 /// <summary>
 /// Основной класс для всех активных объектов в игре
